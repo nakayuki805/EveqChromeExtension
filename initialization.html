@@ -1,0 +1,28 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>エベメモ初期設定</title>
+	<script type="text/javascript" src="md5.js"></script>
+	<script type="text/javascript" src="initialization.js"></script>
+</head>
+<body style="background-color: #CCFFCC">
+	<h1>エベメモへようこそ！</h1>
+	<h2>初期設定を行います。</h2>
+	<p>エベメン認証<br />あなたがエベメンであるか確認します。<br />エベメンでない・わからない場合もこのメモ機能を使用出来ますので「エベメンでない」を選択してください。</p>
+	<form name="evemenConfirm">
+		あなたはエベメンですか？:<select name="isEvemen"><option value="0">エベメンでない</option><option value="1">エベメンである</option></select>
+		<br/>
+		<div id="evemenQuestion" style="display: none">
+			質問1:確認コードを半角英数小文字で入力（PC版チャットの入室前画面にあります）<input type="text" name="confirmCode"/><br />
+			質問2:「エベ」に続く漢字一文字を入力してください（簡単な漢字です）「エベ<input type="text" size="4" name="confirmKanji" />」
+			
+		</div>
+		<br />
+		<input type="button" value="続ける" name="nextBtn"/><br />
+		<h2>使用上の注意</h2>
+		<p>このメモはローカル上に保存されます。したがってどこかに内容が送信されるという事はありません。またこのメモは一時的なメモに使用し、こまめにバックアップすることをお勧めします。<br />メモ内容が消えても誰も責任は負えません。</p>
+	
+	
+</body>
+</html>

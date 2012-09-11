@@ -1,0 +1,42 @@
+<!DOCTYPE HTML>
+<html lang="ja-JP">
+<head>
+	<meta charset="UTF-8">
+	<title>エベメモ設定</title>
+	<script type="text/javascript" src="md5.js"></script>
+	<script type="text/javascript" src="des.js"></script>
+	<script type="text/javascript" src="base64.js"></script>
+	<script type="text/javascript" src="popup.js"></script>
+	<script type="text/javascript" src="eveqinit.js"></script>
+</head>
+<body style="background-color: #CCFFCC">
+<h1>エベ休Chrome拡張にようこそ!</h1>
+<p>親や友人などエベ休の存在を知ってほしくない人が周囲や背後にいないか今一度ご確認ください。</p>
+<h2>エベ休Chrome拡張とは</h2>
+<p>
+エベ休Chrome拡張とはブラウザのChromeの拡張機能でエベ休の在室人数の表示<!--や秘密のブックマーク、秘密のメモ-->の機能を提供します。使ってくれる人が多ければヒミツのメモ、ブックマークの機能もつける予定です<br />
+親や友人、兄弟などエベ休の存在を知ってほしくない人に気づかれないようにシンプルなメモスペースを装っていますので共有PCにインストールするときは「メモれる機能」とでも言ってごまかしてください。<br />
+自分専用のPCや知られてもいい場合も問題ありません。<br />
+<br /><!--
+エベ休人数表示以外の機能は秘密にできるブックマークのようなものとメモの機能があります。<br />
+家族や友人に見られたくないページのブックマークやメモにご活用ください。<br />
+<br />
+ブックマークやメモはランダムなキーでDES暗号化され、そのランダムなキーはあなたが設定したパスワードでDES暗号化されます。<br />
+<br />
+このパスワードはあなたの秘密の復号化以外に表の顔であるエベメモから裏の顔であるエベ休Chrome拡張へ変わるときにも使います。
+--></p>
+<h2>設定</h2>
+<p>パスワードを設定します。複雑にするほど破られにくいですが一般家庭ではそんなにこだわる必要ありません。<!--<span style="font-size: 20px;background-color: yellow;color: black;">パスワードを忘れてしまうとあなたの秘密が二度と見れなくなってしまうかもしれないので忘れないようにしてください。</span>--></p>
+<form name="passForm">
+	<table>
+<tr><td>新しいパスワード:</td><td><input type="password" name="passwd1"/></td></tr>
+<tr><td>パスワード確認:</td><td><input type="password" name="passwd2"/><br /></td></tr>
+<tr><td>パスワード確認(任意):</td><td><input type="password" name="passwd3"/>確認が一つだけじゃ心配な人だけ入力してください。<br /></td></tr>
+<br />
+</table>
+
+<input type="button" value="設定" name="nextBtn"/><br />
+<!--<span style="font-size: 20px;background-color: yellow;color: black;">注意:すでにこの拡張機能を使っている場合、ここでパスワードを再設定するとメモやブックマークのデーターは失われます！</span>-->
+</form>	
+</body>
+</html>

@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "エベメモ",
+  "version": "0.0.2",
+  "description": "ワンクリックでシンプルなメモスペースを表示します。（全く関係ない隠し機能あり）",
+  "icons": { "24": "24.png", "48": "48.png", "128": "128.png" },
+  "browser_action": {
+    "default_icon": "icon.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+   "http://chatx2.whocares.jp/",
+   "http://*.eveq.net/"
+  ],
+ "background": {
+     "scripts":["bg.js"]
+ },
+ "options_page": "option.html"
+} 
